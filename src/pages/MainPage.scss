@@ -1,0 +1,72 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+.MuiAppBar-colorPrimary{
+  background-color: rgb(207, 207, 207)!important;
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px 60px;
+  height: 80px;
+  @media screen and (max-width: 600px) {
+    padding: 0px;
+  }
+  .logo{
+    width: 50px;
+  }
+}
+.footerItem {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  li {
+    color: rgb(105, 105, 105);
+    a {
+      color: rgb(105, 105, 105);
+      margin: 0 10px;
+      padding: 2px 0;
+      transition: border-color .4s;
+      border-bottom: 1px solid transparent;
+      &:hover {
+        border-color: #696969;
+        cursor: pointer;
+      }
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
+      }
+
+    .btns{
+      width: auto;
+      height: 30px!important;
+      padding: 0 10px!important;
+      border-radius: 30px;
+      cursor: pointer;
+      margin: 0 5px;
+      position: relative;
+      font-size: 12px;
+      min-width: auto;
+      text-transform: capitalize;
+      line-height: 2;
+    }
+    .login-btn{
+      @extend .btns;
+      background-color: rgb(0, 0, 0);
+      color: white;
+      border-color: rgb(0, 0, 0);
+    }
+
+    .signup-btn{
+      @extend .btns;
+      background-color: transparent;
+      color: rgb(2, 103, 100);
+      border-color: rgb(2, 103, 100);
+    }
+
+    .cart{
+      font-size: 25px;
+    }
+  }
+}
